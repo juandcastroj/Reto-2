@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulpPelis</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-dark   bg-dark  " >
+      <div class="container-fluid">
+        <img src="./data/images/R.png" alt="logo" width="80" class="d-inline-block align-text-center">
+        <a class="navbar-brand" href="./index.html"  > <h2>Inicio</h2></a>
+        </a>
+        <a class="navbar-brand" href="./ingreso.html">  <h2> Registro</h2></a>
+      </div>
+    </nav>
+
+    <!--carousel-->
+    <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
+      <div class="carousel-inner mx-50">
+        <div class="carousel-item">
+          <img src="./data/images/666x375.jpg" class="d-block w-100 " alt="peli1">
+        </div>
+        <div class="carousel-item active">
+          <img src="./data/images/maxresdefault.jpg" class="d-block w-100" alt="peli2">
+        </div>
+        <div class="carousel-item">
+          <img src="./data/images/Pulp-Fiction-Amazon-Prime-Video.jpg" class="d-block w-100" alt="peli3">
+        </div>
+        <div class="carousel-item">
+          <img src="./data/images/R (1).jpg" class="d-block w-100" alt="peli4">
+        </div>
+        <div class="carousel-item">
+          <img src="./data/images/R.jpg" class="d-block w-100" alt="peli5">
+        </div>
+
+        <!--BOTONES DEL CARRUSEL-->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--CARDS PELICULAS-->
+    <div class="contenedorCards">
+      <div class="row" id="items">
+        <template id="template-card">
+          <div class="col-12 mb-2 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h2 class=""  ></h2>
+                <img src="" alt="" class="img-thumbnail my-4"></img>
+                <a href="./detalle.html"></a>
+                <button type="button"  id="btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Mas info
+                </button>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!--modal detalles-->
+
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#examplemodal">
+      Inicio 
+      </button> -->
+
+      <!-- MODAL-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            
+            
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+            <div id="pruebaModal" class="modal-body">
+              
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+
+  <script src="./script.js" type="module"></script>
+  <script src="./data/data.js" type="module"></script>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
